@@ -18,4 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/users', 'UserController@index');
+Route::get('/users', ['uses'=>'UserController@getIndex']);
+Route::get('/users/datatable', ['as'=>'datatables.data','uses'=>'UserController@anyData']);
