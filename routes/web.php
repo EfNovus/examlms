@@ -20,3 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/users', ['uses'=>'UserController@getIndex']);
 Route::get('/users/datatable', ['as'=>'datatables.data','uses'=>'UserController@anyData']);
+Route::get('/certifications/create', [
+    'uses' => 'CertificationController@create',
+    'as' => 'certification.create'
+]);
