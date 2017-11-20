@@ -3,16 +3,25 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use Kris\LaravelFormBuilder\Form;
 use Yajra\Datatables\Datatables;
+
 class UserController extends Controller
 {
     //
-    public function  index()
+    public function index()
     {
         return view('users');
     }
 
+    public function store()
+    {
+        $title = "Create user";
+        return view('user.create',  ['title' => $title]);
+    }
+
     //
+
     /**
      * Displays datatables front end view
      *

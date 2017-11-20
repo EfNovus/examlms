@@ -166,6 +166,7 @@ return [
         Yajra\DataTables\DataTablesServiceProvider::class,
         Arrilot\Widgets\ServiceProvider::class,
         Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
         /*
          * Package Service Providers...
          */
@@ -230,7 +231,9 @@ return [
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
         'Widget'       => Arrilot\Widgets\Facade::class,
         'AsyncWidget'  => Arrilot\Widgets\AsyncFacade::class,
-        'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class
+        'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];
