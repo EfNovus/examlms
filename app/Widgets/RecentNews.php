@@ -20,7 +20,6 @@ class RecentNews extends AbstractWidget
     public function run()
     {
         //
-
         return view('widgets.recent_news', [
             'config' => $this->config,
         ]);
