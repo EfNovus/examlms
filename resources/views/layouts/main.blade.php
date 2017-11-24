@@ -23,11 +23,10 @@
                     </div>
                 </div>
                 <!-- /menu profile quick info -->
-
                 <br />
-
             <!-- sidebar -->
                 @include('include.sidebar')
+            <!-- end of sidebar -->
             </div>
         </div>
 
@@ -130,12 +129,10 @@
 
         <!-- page content -->
         <div class="right_col" role="main">
-            <!-- top tiles -->
+          <!-- page content -- >
           @yield('content');
+        <!-- end page content -- >
         </div>
-        <!-- /page content -->
-
-        <!-- footer content -->
         <footer>
             <div class="pull-right">
                 Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
