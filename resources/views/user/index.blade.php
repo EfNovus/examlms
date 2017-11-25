@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('content')
-    <table class="table table-bordered" id="users-table">
+    <table class="dataTables_length" id="users-table">
         <thead>
         <tr>
             <th>Id</th>

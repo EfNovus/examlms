@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e45be641133f2d49da16ac967b333d9",
+    "content-hash": "d8d84897059f4f557bf0e72be26de31c",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -996,6 +996,182 @@
             "time": "2017-01-23T04:29:33+00:00"
         },
         {
+            "name": "nayjest/builder",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nayjest/Builder.git",
+                "reference": "278ab1909055b7d18c0ffd525843dc7e8552d3a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nayjest/Builder/zipball/278ab1909055b7d18c0ffd525843dc7e8552d3a7",
+                "reference": "278ab1909055b7d18c0ffd525843dc7e8552d3a7",
+                "shasum": ""
+            },
+            "require": {
+                "nayjest/manipulator": "^3",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "*",
+                "mockery/mockery": "*",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nayjest\\Builder\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vitalii Stepanenko",
+                    "email": "mail@vitaliy.in"
+                }
+            ],
+            "description": "PHP package for instantiating objects using configurations",
+            "time": "2016-02-11T17:10:53+00:00"
+        },
+        {
+            "name": "nayjest/grids",
+            "version": "v1.3.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nayjest/Grids.git",
+                "reference": "d8514e4cfc47eb62f3d4fd56dce1e780fb2c3472"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nayjest/Grids/zipball/d8514e4cfc47eb62f3d4fd56dce1e780fb2c3472",
+                "reference": "d8514e4cfc47eb62f3d4fd56dce1e780fb2c3472",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": ">=4.2",
+                "nayjest/builder": "~2",
+                "php": ">=5.4.0"
+            },
+            "suggest": {
+                "laravelcollective/html": "Required to work with Laravel 5.X",
+                "maatwebsite/excel": "Required to work with Excel export component"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nayjest\\Grids\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vitalii [Nayjest] Stepanenko",
+                    "email": "mail@vitaliy.in",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Grids for Laravel 4 & Laravel 5 frameworks",
+            "homepage": "https://github.com/Nayjest/Grids",
+            "keywords": [
+                "bootstrap",
+                "database",
+                "eloquent",
+                "grid",
+                "html",
+                "laravel",
+                "laravel-5",
+                "laravel5",
+                "tables"
+            ],
+            "time": "2017-01-13T12:03:24+00:00"
+        },
+        {
+            "name": "nayjest/manipulator",
+            "version": "v3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nayjest/manipulator.git",
+                "reference": "80423ec59548de4bec6de2e821b3993974a7b4cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nayjest/manipulator/zipball/80423ec59548de4bec6de2e821b3993974a7b4cb",
+                "reference": "80423ec59548de4bec6de2e821b3993974a7b4cb",
+                "shasum": ""
+            },
+            "require": {
+                "nayjest/str-case-converter": "^1",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4||^5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/mp.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vitalii Stepanenko",
+                    "email": "mail@vitaliy.in"
+                }
+            ],
+            "description": "Utilities for manipulating PHP objects",
+            "time": "2016-09-27T15:52:17+00:00"
+        },
+        {
+            "name": "nayjest/str-case-converter",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nayjest/StrCaseConverter.git",
+                "reference": "e30f16afec3ed83e12369555e264263c23cf68bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nayjest/StrCaseConverter/zipball/e30f16afec3ed83e12369555e264263c23cf68bb",
+                "reference": "e30f16afec3ed83e12369555e264263c23cf68bb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vitalii Stepanenko",
+                    "email": "mail@vitaliy.in"
+                }
+            ],
+            "description": "Library for converting strings from camel case to snake case and vice versa.",
+            "time": "2015-06-04T13:11:29+00:00"
+        },
+        {
             "name": "nesbot/carbon",
             "version": "1.22.1",
             "source": {
@@ -1098,6 +1274,75 @@
                 "php"
             ],
             "time": "2017-11-04T11:48:34+00:00"
+        },
+        {
+            "name": "nwidart/laravel-modules",
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nWidart/laravel-modules.git",
+                "reference": "e757dcb15aee5d0db9c2a6a10fcedce9bfb90c66"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nWidart/laravel-modules/zipball/e757dcb15aee5d0db9c2a6a10fcedce9bfb90c66",
+                "reference": "e757dcb15aee5d0db9c2a6a10fcedce9bfb90c66",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.7",
+                "laravel/framework": "5.5.*",
+                "mockery/mockery": "~0.9",
+                "orchestra/testbench": "^3.5",
+                "phpunit/phpunit": "~6.0",
+                "spatie/phpunit-snapshot-assertions": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Nwidart\\Modules\\LaravelModulesServiceProvider"
+                    ],
+                    "aliases": {
+                        "Module": "Nwidart\\Modules\\Facades\\Module"
+                    }
+                },
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nwidart\\Modules\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Widart",
+                    "email": "n.widart@gmail.com",
+                    "homepage": "https://nicolaswidart.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Module management",
+            "keywords": [
+                "laravel",
+                "module",
+                "modules",
+                "nwidart",
+                "rad"
+            ],
+            "time": "2017-11-07T16:48:07+00:00"
         },
         {
             "name": "paragonie/random_compat",

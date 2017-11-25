@@ -167,6 +167,9 @@ return [
         Arrilot\Widgets\ServiceProvider::class,
         Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Nayjest\Grids\ServiceProvider::class,
+
+
         /*
          * Package Service Providers...
          */
@@ -234,6 +237,8 @@ return [
         'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        'Grids'     => Nayjest\Grids\Grids::class,
+
     ],
 
 ];
