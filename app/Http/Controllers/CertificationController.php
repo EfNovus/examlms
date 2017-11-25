@@ -19,7 +19,7 @@ class CertificationController extends Controller
     public function index()
     {
         //
-        return view(self::RESOURCE_PATH.__FUNCTION__);
+        return view(self::RESOURCE_PATH.'.'.__FUNCTION__);
 
     }
 
