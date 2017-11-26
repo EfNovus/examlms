@@ -23,7 +23,7 @@ Route::get('/users/create', ['uses'=>'UserController@store']);
 Route::get('/users/datatable', ['as'=>'datatables.data','uses'=>'UserController@anyData']);
 
 Route::get('/certifications/index', [
-    'uses' => 'CertificationController@index',
+    'uses' => 'CertificationController@index ',
     'as' => 'certification.index'
 ]);
 

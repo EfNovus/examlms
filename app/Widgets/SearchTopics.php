@@ -4,7 +4,7 @@ namespace App\Widgets;
 
 use Arrilot\Widgets\AbstractWidget;
 
-class RecentNews extends AbstractWidget
+class SearchTopics extends AbstractWidget
 {
     /**
      * The configuration array.
@@ -20,7 +20,7 @@ class RecentNews extends AbstractWidget
     public function run()
     {
         //
-        return view('widgets.recent_news', [
+        return view('widgets.search_topics', [
             'config' => $this->config,
         ]);
     }

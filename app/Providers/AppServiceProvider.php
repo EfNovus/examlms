@@ -2,8 +2,12 @@
 
 namespace App\Providers;
 
+
+use App\Repositories\Topic\TopicRepository;
+use App\Repositories\Topic\TopicRepositoryContract;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -27,5 +31,9 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
+        $this->app->bind(
+            TopicRepositoryContract::class,
+            TopicRepository::class
+        );
     }
 }

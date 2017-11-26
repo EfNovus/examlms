@@ -168,6 +168,7 @@ return [
         Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Nayjest\Grids\ServiceProvider::class,
+        Laravel\Tinker\TinkerServiceProvider::class,
 
 
         /*
@@ -238,6 +239,7 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Grids'     => Nayjest\Grids\Grids::class,
+
 
     ],
 

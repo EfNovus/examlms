@@ -3,13 +3,24 @@
 namespace App\Http\Controllers;
 
 use App\Certification;
+use App\Repositories\Topic\TopicRepositoryContract;
 use Illuminate\Http\Request;
+use Yajra\Datatables\Datatables
+    ;
 
 class CertificationController extends Controller
 {
     const RESOURCE_PATH = 'certification';
 
-    //public function __contruct()
+    protected  $topics_repo;
+
+    /**
+     * @param TopicRepositoryContract $topics
+     */
+    public function __construct(TopicRepositoryContract $topics)
+    {
+        $this->topics_repo = $topics;
+    }
 
     /**
      * Display a listing of the resource.
@@ -19,7 +30,13 @@ class CertificationController extends Controller
     public function index()
     {
         //
-        return view(self::RESOURCE_PATH.'.'.__FUNCTION__);
+
+        $js_assets [] = 'build/js/custom.min.js';
+        $js_assets [] = 'vendors/jquery.tagsinput/src/jquery.tagsinput.js';
+
+        $topics_array = $this->topics_repo->istAllTopics();
+        return view(self::RESOURCE_PATH.'.'.__FUNCTION__,
+            compact('js_assets','topics'));
 
     }
 
@@ -31,7 +48,12 @@ class CertificationController extends Controller
     public function create()
     {
         //
-        return view(self::RESOURCE_PATH.__FUNCTION__);
+        $js_assets [] = 'build/js/custom.min.js';
+        $js_assets [] = 'vendors/jquery.tagsinput/src/jquery.tagsinput.js';
+
+        $topics = $this->topics_repo->listAllTopics();
+        return view(self::RESOURCE_PATH.'.'.__FUNCTION__,
+            compact('js_assets','topics'));
     }
 
     /**
@@ -92,8 +114,5 @@ class CertificationController extends Controller
         //
     }
 
-    public function  anyData()
-    {
 
-    }
 }

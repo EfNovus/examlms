@@ -1,7 +1,10 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: novas
- * Date: 11/19/2017
- * Time: 12:43 AM
- */
+@extends('layouts.master')
+{{--@section('content')--}}
+
+{{--@endsection--}}
+
+{{--@section('scripts')--}}
+
+
+
+{{--@endsection--}}

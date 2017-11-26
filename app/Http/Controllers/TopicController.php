@@ -4,9 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Topic;
 use Illuminate\Http\Request;
+use Yajra\Datatables\Datatables;
+
 
 class TopicController extends Controller
 {
+
+    const RESOURCE_PATH = 'topic';
     /**
      * Display a listing of the resource.
      *
@@ -15,6 +19,8 @@ class TopicController extends Controller
     public function index()
     {
         //
+
+        return view(self::RESOURCE_PATH.'.'.__FUNCTION__);
     }
 
     /**
@@ -25,6 +31,7 @@ class TopicController extends Controller
     public function create()
     {
         //
+        return view(self::RESOURCE_PATH.'.'.__FUNCTION__);
     }
 
     /**
@@ -81,5 +88,18 @@ class TopicController extends Controller
     public function destroy(Topic $topic)
     {
         //
+    }
+
+    public function anyData()
+    {
+
+      return Datatables::of(Topic::query())->make(true);
+
+    }
+
+    public function select2Ajax()
+    {
+        $users = Topic::pluck('name','id')->toArray();
+        return view('welcome',compact('users'));
     }
 }
