@@ -169,7 +169,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Nayjest\Grids\ServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
-
+        Spatie\Permission\PermissionServiceProvider::class,
 
         /*
          * Package Service Providers...
