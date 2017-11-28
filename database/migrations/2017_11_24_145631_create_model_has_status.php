@@ -35,6 +35,6 @@ class CreateModelHasStatus extends Migration
     public function down()
     {
         //
-        Schema::dropIfExists('requests_status');
+        Schema::dropIfExists('model_has_status');
     }
 }

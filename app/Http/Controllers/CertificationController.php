@@ -47,13 +47,9 @@ class CertificationController extends Controller
      */
     public function create()
     {
-        //
-        $js_assets [] = 'build/js/custom.min.js';
-        $js_assets [] = 'vendors/jquery.tagsinput/src/jquery.tagsinput.js';
-
         $topics = $this->topics_repo->listAllTopics();
         return view(self::RESOURCE_PATH.'.'.__FUNCTION__,
-            compact('js_assets','topics'));
+            compact('topics'));
     }
 
     /**

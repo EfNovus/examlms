@@ -170,6 +170,7 @@ return [
         Nayjest\Grids\ServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
+        Zizaco\Entrust\EntrustServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -239,7 +240,7 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Grids'     => Nayjest\Grids\Grids::class,
-
+        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
 
     ],
 
